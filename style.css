@@ -1,0 +1,457 @@
+:root{
+
+    --cor-primaria: #2C2E43;
+    --cor-secundaria: #FFD523;
+    --cor-terciaria: #F4F6FF;
+    --cor-quartenaria: #595260;
+   
+    --fonte-primaria: 'Anton', sans-serif;
+    --fonte-secundaria: 'MuseoModerno', sans-serif;
+    --fonte-terciaria: 'Raleway', sans-serif;
+    
+}
+
+body{
+
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+    font-size: 1em;
+    line-height: 1em;
+    color: var(--cor-terciaria);
+    
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+  
+
+.secao {
+
+    height: 100vh;
+    
+        
+}  
+
+.introducao{
+
+    display: grid;
+    grid-template-areas:
+    "div1 div2";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    background-image: url("Background__1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+header {
+    
+    height: 70px;
+    background-color: var(--cor-primaria);
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+        
+}
+
+.menu {
+
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu li a {
+
+    color: var(--cor-terciaria);
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.menu li a:hover {
+
+    transition: 400ms ease-in;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+
+}
+
+.logo {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    border: solid 2px var(--cor-primaria);
+    
+}
+
+.logo:hover {
+
+    transition: 400ms ease-in;
+    border-color: var(--cor-secundaria);
+
+
+}
+
+.inscreva-se__hoje{
+          
+    padding: 1em 2em;    
+    border: solid 2px var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+                       
+}
+
+.inscreva-se__hoje:hover {
+
+    transition: 400ms ease-in;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    border-color: var(--cor-secundaria);
+}
+
+.nome_empresa {
+
+    color: var(--cor-secundaria);
+    font-size: 1.5em;
+
+}
+
+.titulos {
+
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-style: italic; 
+    text-transform: uppercase;
+    margin: 0.5em;
+    line-height: 1em;
+    
+}
+
+.titulo_principal {
+
+    font-size: 8em;    
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.titulos__secundarios {
+
+    font-size: 4em;
+    text-align: center;
+    color: var(--cor-secundaria);
+       
+}
+
+.botao{
+
+    background-color: var(--cor-secundaria);
+    border-radius: 10px; 
+    text-decoration: none;  
+    color: var(--cor-primaria);    
+    text-transform: uppercase;
+    
+}
+
+.sobre, .oferecemos, .contato {
+     
+    display: grid;
+    grid-template-areas: "div1 div2";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    
+    
+       
+}
+
+.item1 {
+        
+    grid-area: div1;
+        
+}
+
+.item2 {
+  
+    grid-area: div2;
+    
+}
+
+.oferecemos {
+
+    display: grid;
+    grid-template-areas: "div2 div1";
+
+}
+
+
+
+.item1 h2 h3 h4 p {
+
+    max-width: 90%;
+    max-height: auto;
+    margin: 1em;
+}
+
+
+
+
+.item2 img {
+
+    max-width: 90%;
+    max-height: auto;
+    margin: 1em;
+
+    border: solid 2px var(--cor-primaria);
+    border-radius: 10px;
+    
+}
+
+.item2 img:hover {
+
+    transition: 400ms ease-in;
+    transform: scale(1.03);
+    border-color: var(--cor-secundaria);
+
+}
+
+.paragrafos__secundarios{
+
+    margin: 1em;
+    text-align: center;
+    line-height: 1.5em;
+
+}
+  
+form {
+    
+      
+    padding: 20px;
+    margin: 1em;
+    
+}
+
+fieldset {
+
+    padding: 1.5em;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+legend {
+
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
+}
+
+.input-padrao {
+
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px var(--cor-primaria);
+    text-transform: uppercase;
+    font-style: italic;
+      
+}
+
+
+.enviar {
+    
+    padding: 1em;
+    width: 100%; 
+    font-family: var(--fonte-terciaria);
+    font-weight: 900;
+     
+}
+
+.enviar:hover {
+
+    transition: 400ms ease-in;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    border-color: var(--cor-secundaria);
+}
+
+.botao-whatsapp {
+
+   
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+
+}
+  
+.botao-whatsapp img {
+    
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+#btnTopo {
+
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+  
+#btnTopo img {
+
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        
+}
+    
+.rodape{
+
+    display: grid;
+    grid-template-areas: "div3 div4 div5";
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    height: 150px;
+    background-color: var(--cor-secundaria);
+    
+}
+
+.item3 {
+
+    grid-area: div3;
+}
+
+.item4 {
+
+    grid-area: div4;
+}
+
+.item5 {
+
+    grid-area: div5;
+}
+
+.item3, .item4, .item5 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.rodape__icon {
+
+    width: 20px;
+    height: 20px;
+    padding-right: 1em;
+
+}
+
+.paragrafo__footer address, a {
+    
+   
+    font-style: normal;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+    font-weight: 500;
+}
+
+
+@media (max-width: 1050px) {
+
+
+    .titulos {
+
+        word-wrap: break-word;
+    }
+
+      
+    .sobre, .oferecemos, .contato {
+
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "div1" 
+          "div2";
+         
+        grid-auto-rows: auto;
+        
+    }
+
+    .introducao {
+        
+        height: 120vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "div1"
+          "div2";
+
+        height: 120vh;
+       
+    }
+    
+    .rodape{
+
+        display: grid;
+        grid-template-areas: 
+        "div3"
+        "div4"
+        "div5";
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+
+        grid-auto-rows: auto;
+        
+    }
+
+
+
+}  
+
+@media (max-width: 600px) {
+
+ 
+
+    .titulo_principal {
+
+        font-size: 4em;
+    }
+
+    .titulos__secundarios {
+
+        font-size: 3em;
+
+    }
+
+    .introducao {
+
+        height: 60vh;
+    }
+
+}
